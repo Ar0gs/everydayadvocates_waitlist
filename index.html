@@ -70,10 +70,36 @@
     <p class="wl-foot">Coventry &amp; surrounding areas · Companionship, admin support &amp; peace of mind</p>
   </main>
 
+  <!-- Blog teaser — hidden by waitlist-blog.js until posts are loaded -->
+  <section class="wl-blog" id="wlBlogSection" hidden>
+    <div class="wl-blog-inner">
+      <div class="wl-blog-head">
+        <div class="eyebrow">While you wait</div>
+        <h2>From the blog</h2>
+        <p>A few early thoughts from the team, while we finish getting ready.</p>
+      </div>
+      <div class="wl-blog-grid" id="wlBlogGrid"></div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Blog post modal -->
+<div class="wl-blog-modal" id="wlBlogModal" hidden>
+  <div class="wl-blog-modal-backdrop" id="wlBlogModalBackdrop"></div>
+  <div class="wl-blog-modal-panel" role="dialog" aria-modal="true" aria-labelledby="wlBlogModalTitle">
+    <button class="wl-blog-modal-close" id="wlBlogModalClose" aria-label="Close article">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="wl-blog-modal-scroll">
+      <div class="wl-blog-modal-content" id="wlBlogModalContent"></div>
+    </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="supabase-config.js"></script>
 <script src="waitlist.js"></script>
+<script src="waitlist-blog.js"></script>
 </body>
 </html>
